@@ -3,100 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kicks By Kigga</title>
-    
-    <!-- Include Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMTzH8vsw7Aqnd7/+Zkk1ST2l1bp9gWLLsWy4pX" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="style.css">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="logo">
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="catalogue.html"><i class="fas fa-list"></i> Catalogue</a></li>
-                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h1>Welcome to Kicks By Kigga</h1>
-            <p>Get the best kicks in town</p>
-        </section>
+<header>
+    <img src="logo.png" alt="Website Logo">
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i>About</a></li>
+            <li><a href="#products"><i class="fas fa-clipboard-list"></i>Catalogue</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <!-- Featured Products Slideshow -->
-        <section class="featured">
-            <h2>Featured Products</h2>
-            <div class="slideshow-container">
-                <div class="slide fade">
-                    <img src="images/airforce1.jpg" alt="Air Force 1">
-                    <div class="text">
-                        <h3>Air Force 1</h3>
-                        <p>$100</p>
-                    </div>
-                </div>
+<section class="hero" id="home">
+    <h1>Welcome to Our Website</h1>
+    <p>Your tagline or brief description goes here.</p>
+</section>
 
-                <div class="slide fade">
-                    <img src="images/airmax.jpg" alt="Air Max">
-                    <div class="text">
-                        <h3>Air Max</h3>
-                        <p>$120</p>
-                    </div>
-                </div>
-
-                <div class="slide fade">
-                    <img src="images/jordan1.jpg" alt="Jordan 1">
-                    <div class="text">
-                        <h3>Jordan 1</h3>
-                        <p>$150</p>
-                    </div>
-                </div>
-
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <div class="dots">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-        </section>
-
-        <!-- Attention-Capturing Section -->
-        <section class="cta">
-            <h2>Why Choose Us?</h2>
-            <p>At Kicks By Kigga, we offer high-quality footwear with unparalleled comfort and style. Our expert team ensures you get the perfect fit, whether you're going casual or making a statement. Step up your game with the finest kicks in town and enjoy exclusive discounts by subscribing to our newsletter!</p>
-            <a href="catalogue.html" class="btn">Explore Our Catalogue</a>
-        </section>
-    </main>
-
-    <footer>
-        <!-- Left: Navigation Links -->
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalogue.html">Catalogue</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- Right: WhatsApp Contact -->
-        <div class="whatsapp-contact">
-            <h2>Reach Out Via</h2>
-            <a href="https://wa.me/1234567890" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
+<section class="featured" id="products">
+    <h2>Featured Products</h2>
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="img/WhatsApp Image 2024-09-10 at 08.39.33_89152e04.jpg" alt="Air Force">
+            <div class="text">Product 1 Description</div>
         </div>
+        <div class="slide">
+            <img src="product2.jpg" alt="Product 2">
+            <div class="text">Product 2 Description</div>
+        </div>
+        <div class="slide">
+            <img src="product3.jpg" alt="Product 3">
+            <div class="text">Product 3 Description</div>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+</section>
 
-        <!-- Center: Copyright -->
-        <p>&copy; 2024 Kicks By Kigga. All rights reserved.</p>
-    </footer>
+<section class="cta">
+    <h2>Why Choose Us?</h2>
+    <p>At Kicks By Kigga, we offer high-quality footwear with unparalleled comfort and style. Our expert team ensures you get the perfect fit, whether you're going casual or making a statement. Step up your game with the finest kicks in town and enjoy exclusive discounts by subscribing to our newsletter!</p>
+    <a href="catalogue.html" class="btn btn-warning">Explore Our Catalogue</a>
+</section>
 
-    <script src="script.js"></script>
+<footer>
+    <div class="footer-nav">
+        <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#help">Help</a></li>
+        </ul>
+    </div>
+    <div class="whatsapp-contact">
+        <h2>Contact Us</h2>
+        <a href="https://wa.me/your-number" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+    <p>&copy; 2024 Your Website. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script> <!-- Link to your external JavaScript -->
+
 </body>
 </html>
