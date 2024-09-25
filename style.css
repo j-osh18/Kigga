@@ -75,49 +75,55 @@ header img {
     margin-bottom: 40px;
 }
 
+/* Slideshow container */
 .slideshow-container {
     position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
+    max-width: 100%; /* Ensure it fits within its parent */
+    margin: auto; /* Center the slideshow */
+    overflow: hidden; /* Hide overflow */
 }
 
 .slide {
-    display: none;
-    position: relative;
+    display: none; /* Hide all slides by default */
 }
 
 .slide img {
-    width: 100%;
-    border-radius: 10px;
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    max-height: 400px; /* Optional: Set a maximum height for larger screens */
 }
 
 .text {
     position: absolute;
-    bottom: 10px;
-    left: 20px;
-    color: white;
-    font-size: 1.2em;
+    bottom: 15px; /* Position text at the bottom */
+    left: 15px; /* Position text to the left */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    padding: 10px; /* Padding for text */
+    border-radius: 5px; /* Rounded corners */
 }
 
 .dots {
-    text-align: center;
-    margin-top: 20px;
+    text-align: center; /* Center dots */
+    margin-top: 10px; /* Space above dots */
 }
 
 .dot {
     height: 15px;
     width: 15px;
-    margin: 0 5px;
-    background-color: #ddd;
+    margin: 0 2px;
+    background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .active {
-    background-color: #1a75ff;
+    background-color: #717171; /* Active dot color */
 }
+
+
 
 /* CTA Section */
 .cta {
@@ -206,7 +212,6 @@ footer .footer-nav ul li a:hover {
 
 .whatsapp-contact a:hover {
     color: #128C7E;
-    
 }
 
 .whatsapp-contact a .fa {
@@ -214,10 +219,62 @@ footer .footer-nav ul li a:hover {
 }
 
 /* Center: Copyright */
-footer p{
+footer p {
     text-align: center;
-width: 100%;
-margin-top: 20px;
-font-size: 0.9em;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .featured h2 {
+        font-size: 1.5em;
+    }
+
+    .cta h2 {
+        font-size: 1.5em;
+    }
+
+    .cta p {
+        font-size: 1em;
+    }
+
+    .cta .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whatsapp-contact {
+        text-align: center;
+        margin-top: 20px;
+    }
 }
