@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Kicks by Kigga</title>
+
+  <!-- Internal Styling -->
+  <style>
+    /* General page background with linear gradient */
+    body {
+      background: linear-gradient(245.59deg, #12d8ad, #2457b4 28.53%, #152e4b 75.52%);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Styling */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2457b4;
+      text-decoration: none;
+    }
+
+    .navbar {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .navbar a:hover{
+        color: #2457b4;
+    }
+
+    /* Dynamic Heading Section */
+    .dynamic-heading-section {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    #dynamic-heading {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    /* Slideshow Section */
+    .slideshow-container {
+      width: 100%;
+      margin: 20px auto;
+      max-width: 1000px;
+      position: relative;
+    }
+
+    .slideshow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .slide img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    /* Fading animation for slides */
+    .fade {
+      animation: fadeEffect 1.5s;
+    }
+
+    @keyframes fadeEffect {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+
+    /* Product Section */
+    .product-section {
+      padding: 50px 9%;
+    }
+
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    /* Product Cards */
+    .product-card {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .product-card h3 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-card p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .shop-now-btn {
+      padding: 10px 20px;
+      background-color: #12d8ad;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .shop-now-btn:hover {
+      background-color: #2457b4;
+    }
+
+    /* Hover effect for cards */
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Why Choose Section */
+    .why-choose {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .why-choose h2 {
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .why-choose p {
+      font-size: 1.2rem;
+      color: #fff;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <a href="index.html" class="logo">
+      <i class="fas fa-shoe-prints"></i> KicksByKigga
+    </a>
+
+    <ul class="navbar">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="contact.html"><i class="fas fa-box-open"></i> Contact</a></li>
+      
+    </ul>
+  </header>
+
+  <!-- Dynamic Text Below Header -->
+  <section class="dynamic-heading-section">
+    <h2 id="dynamic-heading">Hot Kicks Just for You</h2>
+  </section>
+
+  <!-- Slideshow Section -->
+  <section class="slideshow-container">
+    <div class="slideshow">
+      <div class="slide fade">
+        <img src="img/3.jpg" alt="Jordan Sneakers">
+      </div>
+      <div class="slide fade">
+        <img src="img/custom-nike-air-force-1-low-by-you.png" alt="Adidas Sneakers">
+      </div>
+      <div class="slide fade">
+        <img src="img/5.jpg" alt="Nike Air Max">
+      </div>
+      <div class="slide fade">
+        <img src="img/15.webp" alt="Nike Air Max">
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section class="product-section">
+    <div class="product-container">
+      <!-- Product card 1 -->
+      <div class="product-card">
+        <img src="img/6.jpg" alt="Jordan3 Sneakers">
+        <h3>Jordan3 Sneakers</h3>
+        <p>Sizes: 8, 9, 10, 11</p>
+        <a href="contact.html" class="shop-now-btn">Shop Now</a>
+      </div>
+
+      <!-- Product card 2 -->
+      <div class="product-card">
+        <img src="img/7.jpg" alt="Adidas Campus Sneakers">
+        <h3>Adidas Campus Sneakers</h3>
+        <p>Sizes: 8, 9, 10</p>
+        <a href="contact.html" class="shop-now-btn">Shop Now</a>
+      </div>
+
+      <!-- Product card 3 -->
+      <div class="product-card">
+        <img src="img/8.jpg" alt="Nike Ultra">
+        <h3>Nike Ultra</h3>
+        <p>Sizes: 8, 9, 10, 11</p>
+        <a href="contact.html" class="shop-now-btn">Shop Now</a>
+      </div>
+
+      <!-- Added Product Cards -->
+      <!-- Product card 4 -->
+      <div class="product-card">
+        <img src="img/9.jpg"
+        alt="Jordan Nine`s">
+        <h3>Jordan Nine`s</h3>
+        <p>Sizes: 9, 10, 11, 12</p>
+        <a href="contact.html" class="shop-now-btn">Shop Now</a>
+      </div>
+
+      <!-- Product card 5 -->
+      <div class="product-card">
+        <img src="img/10.jpg" alt="Suede Leather Vans">
+        <h3>Suede Leather Vans</h3>
+        <p>Sizes: 5, 6, 7, 8, 9</p>
+        <a href="contact.html" class="shop-now-btn">Shop Now</a>
+      </div>
+
+      <!-- Product card 6 -->
+      <div class="product-card">
+        <img src="img/11.jpg" alt="Skater Bolt">
+        <h3>Skater Bolt</h3>
+        <p>Sizes: 6, 7, 8, 9</p>
+        <a href="contact.html" class="shop-now-btn">Shop Now</a>
+      </div>
+
+      <!-- Product card 7 -->
+      <div class="product-card">
+        <img src="img/12.jpeg" alt="Reebok CrossFit">
+        <h3>Reebok CrossFit</h3>
+        <p>Sizes: 8, 9, 10, 11</p>
+        <a href="contact.html" class="shop-now-btn">Shop Now</a>
+      </div>
+
+      <!-- Product card 8 -->
+      <div class="product-card">
+        <img src="img/14jpeg.jpeg" alt="New Balance Fresh Foam">
+        <h3>New Balance Fresh Foam</h3>
+        <p>Sizes: 7, 8, 9</p>
+        <a href="contact.html" class="shop-now-btn">Shop Now</a>
+      </div>
+
+      <!-- Product card 9 -->
+      <div class="product-card">
+        <img src="img/13jpg.jpg" alt="Adidas Samba">
+        <h3>Adidas Samba</h3>
+        <p>Sizes: 6, 7, 8, 9</p>
+        <a href="contact.html" class="shop-now-btn">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Slideshow Script -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+  </script>
+
+</body>
+</html>
