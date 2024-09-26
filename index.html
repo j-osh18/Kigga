@@ -3,74 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <title>Kicks By Kigga</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <!-- Logo with a Font Awesome icon -->
+    <a href="" class="logo">
+        <i class="fas fa-shoe-prints"></i> KicksByKigga
+    </a>
 
-<header>
-    <img src="logo.png" alt="Website Logo">
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="#about"><i class="fas fa-info-circle"></i>About</a></li>
-            <li><a href="#products"><i class="fas fa-clipboard-list"></i>Catalogue</a></li>
-        </ul>
-    </nav>
-</header>
+    <ul class="navbar">
+        <li><a href=""><i class="fas fa-home"></i> Home</a></li>
+        <li><a href=""><i class="fas fa-box-open"></i> Products</a></li>
+        <li><a href=""><i class="fas fa-phone-alt"></i> Contact</a></li>
+    </ul>
 
-<section class="hero" id="home">
-    <h1>Welcome to Our Website</h1>
-    <p>Your tagline or brief description goes here.</p>
-</section>
-
-<section class="featured" id="products">
-    <h2>Featured Products</h2>
-    <div class="slideshow-container">
-        <div class="slide">
-            <img src="img/WhatsApp Image 2024-09-10 at 08.39.33_89152e04.jpg" alt="Air Force">
-            <div class="text">Product 1 Description</div>
-        </div>
-        <div class="slide">
-            <img src="product2.jpg" alt="Product 2">
-            <div class="text">Product 2 Description</div>
-        </div>
-        <div class="slide">
-            <img src="product3.jpg" alt="Product 3">
-            <div class="text">Product 3 Description</div>
-        </div>
-        <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+    <!-- Menu icon with Font Awesome -->
+    <div id="menu-icon">
+        <i class="fas fa-bars"></i>
     </div>
-</section>
+  </header>
 
-<section class="cta">
-    <h2>Why Choose Us?</h2>
-    <p>At Kicks By Kigga, we offer high-quality footwear with unparalleled comfort and style. Our expert team ensures you get the perfect fit, whether you're going casual or making a statement. Step up your game with the finest kicks in town and enjoy exclusive discounts by subscribing to our newsletter!</p>
-    <a href="catalogue.html" class="btn btn-warning">Explore Our Catalogue</a>
-</section>
-
-<footer>
-    <div class="footer-nav">
-        <ul>
-            <li><a href="#privacy">Privacy Policy</a></li>
-            <li><a href="#terms">Terms of Service</a></li>
-            <li><a href="#help">Help</a></li>
-        </ul>
+  <section class="hero">
+    <div class="hero-text">
+        <h1>Get the best kicks in town</h1>
+        <p>Get the best kicks in town at the best prices</p>
+        <a href="" class="btn">Shop Now</a>
     </div>
-    <div class="whatsapp-contact">
-        <h2>Contact Us</h2>
-        <a href="https://wa.me/your-number" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+
+    <div class="hero-img">
+        <img src="img/4-removebg-preview.png" alt="shoe">
     </div>
-    <p>&copy; 2024 Your Website. All rights reserved.</p>
-</footer>
 
-<script src="script.js"></script> <!-- Link to your external JavaScript -->
+  </section>
 
+  <div class="icons">
+    <a href=""><i class="fab fa-whatsapp"></i> </a>
+    <a href=""><i class="fab fa-instagram"></i> </a>
+</div>
+     
+    <div class="scroll-down">
+        <a href="#products"><i class="fas fa-chevron-down"></i></a>
+    </div>
+
+    <!--scroll reveal effect-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--script.js-->
+    <script src="script.js"></script>
 </body>
 </html>
